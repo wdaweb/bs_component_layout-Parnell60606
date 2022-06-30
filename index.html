@@ -1,0 +1,310 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <style>
+            .container-fluid {
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .card {
+                /* margin: 10px; */
+                padding: 0;
+                /* margin-top: 30px;
+                margin-bottom: 30px; */
+            }
+
+            .bg-wheat {
+                background-color: rgb(250, 249, 236);
+            }
+
+            #fs-sm-6 {
+                font-size: 1rem;
+            }
+
+
+            #map {
+                width: 100%;
+                height: 600px;
+            }
+
+            @media (max-width: 576px) {
+                .bg-dark {
+                    background-color: #000000 !important
+                }
+
+                .top-list {
+                    display: none;
+                }
+
+                #fs-sm-6 {
+                    font-size: calc(1.275rem + 0.3vw);
+                }
+
+                #map {
+                    width: 576px;
+                    height: 300px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+            <!-- container-fluid滿版， .container固定寬度 -->
+            <div class="container-fluid px-2 px-sm-4 ">
+                <!-- .navbar-brand 品牌 logo 的容器，可以放文字或圖片 -->
+                <a class="navbar-brand" href="#">泰山咖啡莊園</a>
+                <!--  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#aaaaaa">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- ↑縮小時右邊"三"的按鈕 -->
+
+                <div class="top-list">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">菜單餐點</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#1">周邊景點</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">莊園位置</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">聯絡我們</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">咖啡故事</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- 輪播圖 -->
+        <div class="container-fluid pt-5 pt-sm-0">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://picsum.photos/1920/1080/?random=1" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/1920/1080/?random=2" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/1920/1080/?random=3" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- card 3個 -->
+        <div class="container-fluid px-3 px-sm-5  py-0 py-sm-5">
+            <div class="row align-content-center justify-content-center py-sm-5 py-0 my-sm-5">
+                <!-- 1 -->
+                <div class="col-lg-4 py-4 py-sm-0">
+                    <div class="card  ">
+                        <img src="https://picsum.photos/300/200/?random=5" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">晶片你就便利商店清。</h4>
+                            <p class="card-text ">
+                                笑話基於公主但在走進我去一下子，社區承擔瞬間策劃因為第二章開展台南一是，走勢猶豫氣息，帶著開放打了基本，辦公模組精美種種生物，能量也許，你要。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-lg-4 py-4 py-sm-0">
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200/?random=6" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">晶片你就便利商店清。</h4>
+                            <p class="card-text ">
+                                笑話基於公主但在走進我去一下子，社區承擔瞬間策劃因為第二章開展台南一是，走勢猶豫氣息，帶著開放打了基本，辦公模組精美種種生物，能量也許，你要。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="col-lg-4 py-4 pt-sm-0 pb-sm-0 pb-5">
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200/?random=7" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">晶片你就便利商店清。</h4>
+                            <p class="card-text ">
+                                笑話基於公主但在走進我去一下子，社區承擔瞬間策劃因為第二章開展台南一是，走勢猶豫氣息，帶著開放打了基本，辦公模組精美種種生物，能量也許，你要。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- card 田 -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 p-0">
+                    <img src="https://picsum.photos/1080/920/?random=8" class="card-img-top" alt="...">
+                </div>
+
+                <div class="col-sm-6 p-0 bg-wheat d-flex">
+                    <div class="card border-0 d-flex flex-grow-1">
+
+                        <div
+                            class="card-body bg-wheat text-center d-flex flex-column align-items-center justify-content-sm-center">
+                            <h5 class="card-title display-5 d-flex m-3">Coffee shop</h5>
+                            <div class="card-text d-flex m-3" id="fs-sm-6">
+                                造成城市還能求助告訴你日子提出了似乎你還房地產，溫州特別是是這樣第一章重大訪問普遍，淡淡處理器完成美麗名單一片一臉人大強調計劃百度今後瞬間我家，豐富可愛並非性格即可都說簡介女生線上優勢體力那是我的心規格，重點不在語言街道選單身材南方，團隊現有如下，本網站。
+                            </div>
+                            <a href="#" class="btn btn-primary d-inline d-flex bg-success  m-5">VIEW COLLECTION</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 p-0 bg-wheat d-flex order-2 order-sm-1">
+                    <div class="card border-0">
+
+                        <div
+                            class="card-body bg-wheat text-center d-flex flex-column align-items-center justify-content-sm-center flex-grow-1">
+                            <h5 class="card-title display-5 d-flex m-3">Coffee shop</h5>
+                            <div class="card-text d-flex m-3" id="fs-sm-6">
+                                造成城市還能求助告訴你日子提出了似乎你還房地產，溫州特別是是這樣第一章重大訪問普遍，淡淡處理器完成美麗名單一片一臉人大強調計劃百度今後瞬間我家，豐富可愛並非性格即可都說簡介女生線上優勢體力那是我的心規格，重點不在語言街道選單身材南方，團隊現有如下，本網站。
+                            </div>
+                            <a href="#" class="btn btn-primary d-inline d-flex bg-success  m-5">VIEW COLLECTION</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 p-0 order-1 order-sm-2">
+                    <img src="https://picsum.photos/1080/920/?random=9" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <!-- map -->
+        <div class="container-fluid">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7044751775593!2d121.4167367650064!3d25.044101283967578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1656518443583!5m2!1szh-TW!2stw"
+                id="map" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- d-flex flex-column align-items-center -->
+        <div class="container-fluid bg-wheat p-4">
+            <h1>聯絡我們</h1>
+            <h6>泰山咖啡莊園，傳承熱情 coding 精神</h6>
+            <div class="">任何問題或建議，歡迎您透過客服表單告知我們，謝謝！</div>
+
+
+            <form class="row">
+                <div class="col-sm-6">
+                    <!-- 姓名 -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">姓名</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">先生</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">女士</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- 電話 -->
+                <div class="col-sm-6">
+                    <label for="inputPassword4" class="form-label">電話</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+
+                <div class="row mb-3">
+                    <!-- 電子信箱 -->
+                    <div class="col-sm-6">
+                        <label for="inputPassword4" class="form-label">電子信箱</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>餐飲建議</option>
+                            <option>泡麵</option>
+                            <option>水</option>
+                            <option>葉子</option>
+                            <option>樹皮</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">意見需求</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-12 mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                訂閱泰山莊園最新資訊
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-secondary">Sign in</button>
+                    </div>
+                </div>
+
+        </div>
+
+        </div>
+
+
+        </div>
+
+    </body>
+
+    </html>
